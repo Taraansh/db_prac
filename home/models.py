@@ -8,7 +8,7 @@ class employees(models.Model):
     gender = models.CharField(max_length=200)
     dept = models.CharField(max_length=200)
     country = models.CharField(max_length=200)
-    salary = models.CharField(max_length=200)
+    salary = models.IntegerField(null=False)
 
     def __str__(self):
         return self.emp_name

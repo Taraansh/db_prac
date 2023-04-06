@@ -1,4 +1,4 @@
-from django.http import JsonResponse
+from django.http import HttpResponse
 from .models import employees
 from .serializers import employeesSerializer
 from rest_framework.response import Response
@@ -48,3 +48,6 @@ def employee_detail(request, pk):
     if request.method == "DELETE":
         employee.delete()
         return Response("User was deleted")
+    
+def leads(request):
+    return HttpResponse("This is the basic page that has JSON data")

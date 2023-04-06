@@ -80,10 +80,10 @@ WSGI_APPLICATION = 'db_prac.wsgi.application'
 DATABASES = {
    'default': {
        'ENGINE': 'django.db.backends.postgresql',
-       'NAME': 'sql_demo',
-       'USER': 'postgres',
-       'PASSWORD': 'taraansh.1109',
-       'HOST': 'localhost',
+       'NAME': 'hpalibto',
+       'USER': 'hpalibto',
+       'PASSWORD': 'OyuL7CgCyGl0gDdkiCcgmCvvlPdhcONN',
+       'HOST': 'babar.db.elephantsql.com',
        'PORT': '5432',
    }
 }

@@ -14,7 +14,7 @@ def employees_list(request):
 
     if request.method == "POST":
         employee = employees.objects.create(
-            emp_name = request.data('emp_name'),
+            emp_name = request.data['emp_name'],
             email = request.data['email'],
             gender = request.data['gender'],
             dept = request.data['dept'],

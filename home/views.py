@@ -35,7 +35,7 @@ def employee_detail(request, pk):
         return Response(serializer.data)
     
     if request.method == "PUT":
-        employee.emp_name = request.data['emp_name'],
+        employee.emp_name = request.data('emp_name'),
         employee.email = request.data['email'],
         employee.gender = request.data['gender'],
         employee.dept = request.data['dept'],

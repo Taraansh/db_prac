@@ -14,12 +14,12 @@ def employees_list(request):
 
     if request.method == "POST":
         employee = employees.objects.create(
-            emp_name = request.data['emp_name'],
-            email = request.data['email'],
-            gender = request.data['gender'],
-            dept = request.data['dept'],
-            country = request.data['country'],
-            salary = request.data['salary']
+            emp_name=request.data.get('emp_name', ''),
+            email=request.data.get('email', ''),
+            gender=request.data.get('gender', ''),
+            dept=request.data.get('dept', ''),
+            country=request.data.get('country', ''),
+            salary=request.data.get('salary', '')
         )
         serializer = employeesSerializer(employee, many = False)
         return Response(serializer.data)

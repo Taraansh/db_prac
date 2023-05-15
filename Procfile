@@ -1,1 +1,0 @@
-web: gunicorn db_prac.wsgi --log-file
